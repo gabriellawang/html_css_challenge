@@ -41,6 +41,7 @@ body {
 .logo-text-mobile {
     font-weight: lighter;
     font-size: 1em;
+    white-space: nowrap;
 }
 .menu-pc {
     right: 0;
@@ -60,6 +61,7 @@ body {
     background-color: transparent;
     padding: 5px;
     border-radius: 10px;
+    color: #30343D;
 }
 .highlighted, .menu-btn:hover{
     background-color: rgb(138, 136, 136);
@@ -97,7 +99,7 @@ ul.options-pc li {
     margin-right: 10px;
 }
 a {
-    text-decoration: auto;
+    text-decoration: none;
     color: currentColor;
 }
 a.free-trial {
@@ -156,6 +158,7 @@ button.free-trial {
     padding-right: 40px;
     font-weight: bolder;
     margin-top: 40px;
+    color: #30343D;
 }
 
 
