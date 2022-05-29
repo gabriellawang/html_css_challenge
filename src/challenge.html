@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <title>Boxed Coffee</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="pc-view">
+            <div class="container">
+                <div class="logo logo-pc">
+                    <img src="../img/logo@2x.png" />
+                    <h1 class="logo-text-pc">boxed coffee</h1>
+                </div>
+
+                <div class="menu-pc">
+                    <ul class="options-pc">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="free-trial">Free Trial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-view">
+            <div class="container">
+                <div class="logo logo-mobile">
+                    <img src="../img/logo.png" />
+                    <h1 class="logo-text-mobile">boxed coffee</h1>
+                </div>
+
+                <div class="menu-mobile">
+                    <button class="menu-btn" id="collapsible-btn" onclick="onClick()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="options-mobile" id="collapsible-menu">
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="free-trial">Free Trial</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- banner -->
+    <div id="banner">
+        <div class="banner-view">
+            <div class="grid">
+                <div class="banner-col">
+                    <h1 id="banner-title">Coffee delivered straight to your door</h1>
+                    <p>Get boxed organic coffee delivered to your home.</p>
+                    <p>Drink in minutes.</p>
+                    <button class="free-trial">Try Boxed Coffee free for 7 days</button>
+                </div>
+
+                <div class="banner-col banner-img">
+                    <img src="../img/coffee.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div id="content">
+        <div class="content-view">
+            <div class="grid">
+                <div class="content-item">
+                    <img class="content-img" src="../img/icon-delivery.png"/>
+                    <h4>Delivered Fast</h4>
+                    <div>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eiusmod tempor</div>
+                </div>
+                <div class="content-item">
+                    <img class="content-img" src="../img/icon-coffee.png"/>
+                    <h4>Delivered Hot</h4>
+                    <div>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eiusmod tempor</div>
+
+                </div>
+                <div class="content-item">
+                    <img class="content-img" src="../img/icon-time.png"/>
+                    <h4>Delivered Now</h4>
+                    <div>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eiusmod tempor</div>
+                </div>
+            </div>
+            <div>
+                <button class="buy-fast-btn">Buy fast, hot coffee now</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

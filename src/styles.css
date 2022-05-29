@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #30343D;
+    margin-bottom: 40px;
+}
+
+/* header */
+#header {
+    background-color: #DDDDDD;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #424242;
+    z-index: 999;
+}
+.pc-view {
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+}
+.container {
+    display: inline-flex;
+}
+.logo-pc {
+    height: 60px;
+    display: inline-flex;
+    margin: 10px;
+    margin-left: 20px;
+}
+.logo-mobile {
+    height: 40px;
+    display: inline-flex;
+    margin: 10px;
+    margin-left: 20px;
+}
+.logo-text-pc {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+.logo-text-mobile {
+    font-weight: lighter;
+    font-size: 1em;
+}
+.menu-pc {
+    right: 0;
+    position: absolute;
+    margin: 10px;
+    margin-right: 20px;
+    height: 60px;
+}
+.menu-mobile {
+    right: 0;
+    position: absolute;
+    margin: 10px;
+    margin-right: 20px;
+}
+.menu-btn {
+    border: 0;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+}
+.highlighted, .menu-btn:hover{
+    background-color: rgb(138, 136, 136);
+}
+.menu-mobile .fa {
+    font-size: 30px;
+}
+ul.options-pc li {
+    display: inline;
+    margin: 30px;
+    font-weight: lighter;
+}
+.options-mobile {
+    right: 0;
+    position: fixed;
+    background-color: #616161;
+    color: white;
+    display: none;
+}
+.options-mobile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.options-mobile ul li {
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.options-mobile ul li:hover {
+    background-color: #424242;
+}
+.logo img {
+    height: 100%;
+    margin-right: 10px;
+}
+a {
+    text-decoration: auto;
+    color: currentColor;
+}
+a.free-trial {
+    color: #FBBC00;
+}
+
+/* banner */
+#banner {
+    background-color: #F6F6F6;
+    padding: 20px;
+}
+.banner-view .grid {
+    display: inline-grid;
+    grid-template-columns: 50% auto;
+    justify-items: center;
+    margin: 20px
+}
+#banner-title {
+    font-size: 4em;
+}
+.banner-col {
+    padding: 10px;
+}
+
+button.free-trial {
+    background-color: #FBBC00;
+    border: 0;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+/* content */
+.content-view {
+    text-align: center;
+}
+.content-view .grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+.content-item {
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    max-width: 350px;
+}
+.content-img {
+    height: 120px;
+}
+.buy-fast-btn {
+    background-color: transparent;
+    border: 2px solid #FBBC00;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+
+/* breakpoint */
+
+@media screen and (max-width: 650px)  {
+    #header {
+        height: 60px;
+    }
+    #banner {
+        margin-top: 60px;
+    }
+    .pc-view {
+        display: none;
+    }
+    .banner-view .grid {
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .banner-view {
+        text-align: center;
+    }
+    .banner-view .grid .banner-img {
+        grid-row: 1;
+    }
+}
+
+@media screen and (min-width: 651px)  {
+    #header {
+        height: 80px;
+    }
+    #banner {
+        margin-top: 80px;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .banner-view {
+        max-width: 1500px;
+        margin: auto;
+        position: relative;
+    }
+    .content-view {
+        max-width: 1500px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    ul.options-pc li {
+        margin: 20px
+    }
+    #banner-title {
+        font-size: 2em;
+    }
+    button.free-trial {
+        padding: 15px;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .content-view .grid {
+        grid-template-columns: auto;
+        justify-items: center;
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #banner-title {
+        font-size: 3em;
+    }
+}
